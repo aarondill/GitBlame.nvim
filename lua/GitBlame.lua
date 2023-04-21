@@ -1,7 +1,7 @@
 local M = {}
 local state = require("GitBlame.state")
 local view = require("GitBlame.view")
-local config = require("GitBlame.config")
+local config_module = require("GitBlame.config")
 
 ---Setup the plugin
 ---@param user_config table
@@ -9,7 +9,7 @@ function M.setup(user_config)
 	local augroup = vim.api.nvim_create_augroup("GitBlame", { clear = true })
 
 	-- Export it
-	M.config = config.setup(user_config)
+	M.config = config_module.setup(user_config)
 
 	-- Allow disabling autocommands
 	if M.config.enable_on_move then
@@ -40,7 +40,7 @@ function M.setup(user_config)
 		vim.notify("Enabled: " .. tostring(state.enabled))
 	end, { desc = "Disable Git Blame" })
 
-	state.enabled = config.enabled
+	state.enabled = M.config.enabled
 end
 
 ---Get blame for current line
