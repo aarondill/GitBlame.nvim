@@ -1,11 +1,22 @@
-# GitBlame.nvim
+# git-blame.nvim
 
+Neovim plugin to show git blame on the current line using virtual text.
 Not the first, not the last. I suggest you don't use this repo. Here's some alternatives:
 
-- https://github.com/f-person/git-blame.nvim
-- https://github.com/kessejones/git-blame-line.nvim
+- [git-blame.nvim (f-person)](https://github.com/f-person/git-blame.nvim)
+- [git-blame-line.nvim (kessejones)](https://github.com/kessejones/git-blame-line.nvim)
 
 If you _really_ want to use it, here's some docs:
+
+## Usage
+
+```lua
+require("git-blame").setup({
+  -- Pass your options here - or don't
+})
+```
+
+If `config.enable_on_move` is set to `true`, then autocomands will be created to show the blame on cursor move, otherwise, manage it yourself using `gitblame.blame()` (show the blame) and `gitblame.clear()` (remove the blame)
 
 ## Options and defaults:
 
@@ -20,7 +31,7 @@ If you _really_ want to use it, here's some docs:
   enable_on_move = true,
   -- String to show before the blame
   prefix = "",
-  -- How many spaces to place before the blameit
+  -- How many spaces to place before the blame
   left_padding = 1,
   -- Message to display if the line hasn't been committed yet
   default_message = "No commit",

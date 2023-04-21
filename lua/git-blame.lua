@@ -1,7 +1,7 @@
 local M = {}
-local state = require("GitBlame.state")
-local view = require("GitBlame.view")
-local config_module = require("GitBlame.config")
+local state = require("git-blame.state")
+local view = require("git-blame.view")
+local config_module = require("git-blame.config")
 
 ---Setup the plugin
 ---@param user_config table
