@@ -8,6 +8,8 @@ Not the first, not the last. I suggest you don't use this repo. Here's some alte
 
 If you _really_ want to use it, here's some docs:
 
+Warning: Using this plugin on *large files* can result in NeoVim freezing.
+
 ## Usage
 
 ```lua
