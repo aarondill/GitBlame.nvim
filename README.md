@@ -1,8 +1,9 @@
 # GitBlame.nvim
 
 Not the first, not the last. I suggest you don't use this repo. Here's some alternatives:
-https://github.com/f-person/git-blame.nvim
-https://github.com/kessejones/git-blame-line.nvim
+
+- https://github.com/f-person/git-blame.nvim
+- https://github.com/kessejones/git-blame-line.nvim
 
 If you _really_ want to use it, here's some docs:
 
@@ -28,7 +29,7 @@ If you _really_ want to use it, here's some docs:
   enabled = true,
 ```
 
-## commands
+## Commands
 
 - :GitBlameDisable
 - :GitBlameEnable
