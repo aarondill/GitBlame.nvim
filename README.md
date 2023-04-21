@@ -1,5 +1,7 @@
 # git-blame.nvim
 
+This project has been archived. Use f-person/git-blame.nvim instead. All major features are supported. The only unsupported feature is `prefix` and `left_padding`, but they can be made with `vim.g.gitblame_message_template`
+
 Neovim plugin to show git blame on the current line using virtual text.
 Not the first, not the last. I suggest you don't use this repo. Here's some alternatives:
 
@@ -54,5 +56,4 @@ Inspiration: [f-person](https://github.com/f-person/git-blame.nvim)
 
 ## Todo (if I have time):
 
-If you're seeing this, feel free to submit a pull request
 `gitblame_delay` option, defaults to `500`. This should help with flickering.
