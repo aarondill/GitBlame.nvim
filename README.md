@@ -10,6 +10,8 @@ Not the first, not the last. I suggest you don't use this repo. Here's some alte
 
 If you _really_ want to use it, here's some docs:
 
+Warning: Using this plugin on _large files_ can result in NeoVim freezing.
+
 ## Usage
 
 ```lua
@@ -50,10 +52,11 @@ If `config.enable_on_move` is set to `true`, then autocomands will be created to
 
 ## Thanks:
 
-Initial git blame code: [Taylor Thompson](https://teukka.tech/vimtip-gitlens.html)
-Initial view code: [kessejones](https://github.com/kessejones/git-blame-line.nvim/blob/main/lua/git-blame-line/view.lua)
-Inspiration: [f-person](https://github.com/f-person/git-blame.nvim)
+- Initial git blame code: [Taylor Thompson](https://teukka.tech/vimtip-gitlens.html)
+- Initial view code: [kessejones](https://github.com/kessejones/git-blame-line.nvim/blob/main/lua/git-blame-line/view.lua)
+- Inspiration: [f-person](https://github.com/f-person/git-blame.nvim)
 
 ## Todo (if I have time):
 
-`gitblame_delay` option, defaults to `500`. This should help with flickering.
+- `gitblame_delay` option, defaults to `500`. This should help with flickering.
+- `ft_ignore` option, array of file type to disable on. default to something reasonable (man, term, etc).
