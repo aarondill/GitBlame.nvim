@@ -51,3 +51,8 @@ If `config.enable_on_move` is set to `true`, then autocomands will be created to
 Initial git blame code: [Taylor Thompson](https://teukka.tech/vimtip-gitlens.html)
 Initial view code: [kessejones](https://github.com/kessejones/git-blame-line.nvim/blob/main/lua/git-blame-line/view.lua)
 Inspiration: [f-person](https://github.com/f-person/git-blame.nvim)
+
+## Todo (if I have time):
+
+If you're seeing this, feel free to submit a pull request
+`gitblame_delay` option, defaults to `500`. This should help with flickering.
