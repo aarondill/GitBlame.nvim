@@ -56,3 +56,4 @@ Inspiration: [f-person](https://github.com/f-person/git-blame.nvim)
 
 If you're seeing this, feel free to submit a pull request
 `gitblame_delay` option, defaults to `500`. This should help with flickering.
+`ft_ignore` option, array of file type to disable on. default to something reasonable (man, term, etc).
